@@ -6,9 +6,9 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch('/api/db')
+    fetch('/api/fdgecontroller')
     .then((res) => res.json())
-    .then((data) => setMessage(data.message));
+    .then((data) => setMessage(data.secretosfdge));
     }, []
   );
   return (
